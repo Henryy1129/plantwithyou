@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFAF0s;
+}
+
+
+/* head */
+
+.header {
+    background-color: #a1b309;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* 將標頭固定在頂部 */
+    top: 0; /* 設置距離頂部的距離為 0 */
+    width: 100%; /* 使標頭填滿整個視窗寬度 */
+    z-index: 999; /* 確保標頭位於其他內容之上 */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* 調整大小 */
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.4em; /* 調整字體大小 */
+    margin-left: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* container */
+
+.container1 {
+    align-items: center; /* 垂直居中 */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 10px;
+    height: 100vh; /* 將容器的高度設置為視窗的高度 */
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .contact-info,
+.footer .social-media {
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFAF0s;
+}
+
+
+/* head */
+
+.header {
+    background-color: #a1b309;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* 將標頭固定在頂部 */
+    top: 0; /* 設置距離頂部的距離為 0 */
+    width: 100%; /* 使標頭填滿整個視窗寬度 */
+    z-index: 999; /* 確保標頭位於其他內容之上 */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* 調整大小 */
+    margin-right: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.4em; /* 調整字體大小 */
+    margin-left: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 70px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* div1 */
+
+.container1 {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: space-between; /* 左右对齐 */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+
+    height: 100vh; /* 將容器的高度設置為視窗的高度 */
+}
+
+
+.title {
+    text-align: left;
+}
+
+.title h1 {
+    font-size: 4em;
+}
+
+.title p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.image-section {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+.window {
+    position: relative;
+    width: 600px; /* 將寬度放大三倍 */
+    height: 600px; /* 將高度放大三倍 */
+    
+}
+
+.window-shape {
+    position: absolute;
+    top: 0;
+    width: 500px; /* 將寬度放大三倍 */
+    height: 600px; /* 將高度放大三倍 */
+    background-image: url('./img/window_image.jpg'); /* 替換 'window_image.png' 為窗戶圖片的URL */
+    background-size: cover;
+    border-top-left-radius: 300px; /* 調整圓角半徑 */
+    border-top-right-radius: 300px; /* 調整圓角半徑 */
+    overflow: hidden; /* 將超出範圍的內容隱藏 */
+}
+
+.circle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 270px; /* 調整圓形大小 */
+    height: 270px; /* 調整圓形大小 */
+    background-image: url('./img/circle_image.png'); /* 替換 'circle_image.png' 為圓形圖片的URL */
+    background-size: cover;
+    border-radius: 50%;
+    z-index: 2; /* 確保圓形在窗戶上方 */
+    transform: translate(-50%, 50%); /* 將圓形的圓心移動到左下角 */
+}
+
+
+
+
+
+
+
+
+
+/* div2 */
+
+.bar1 {
+    background-color: #e7e9b8;
+    max-width: 100%;
+    height: 200px; /* 增加高度以容納 .design 和 <p> 元素 */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* 將 .bar1 的 justify-content 設置為 flex-start */
+    align-items: center; /* 將 .bar1 的 align-items 設置為 center */
+    position: relative; /* 確保 .bar1 是相對定位 */
+}
+
+.design {
+    background-color: #a1b309;
+    position: absolute; /* 將 .design 設置為絕對定位 */
+    top: 50%; /* 將 .design 定位在 .bar1 的上方 */
+    left: 0; /* 將 .design 定位在 .bar1 的左方 */
+    width: 35%; /* 調整 .design 的寬度 */
+    height: 100%; /* 調整 .design 的高度 */
+    z-index: 1; /* 確保 .design 的 z-index 比 .bar1 更高 */
+    border-top-right-radius: 230px; /* 將右上角變成 1/4 圓形 */
+    transform: translateY(-50%); /* 垂直居中 */
+    background-size: cover;
+}
+
+.bar1 .content {
+    position: absolute;
+    top: 50%;
+    left: 53%; /* 與 .design 的右邊對齊 */
+    transform: translateY(-50%); /* 垂直居中 */
+    display: flex;
+    flex-direction: column; /* 垂直堆疊 <p> 元素 */
+}
+
+.bar1 p {
+    font-size: 3em;
+    color: black;
+    margin: 0; /* 清除預設的邊距 */
+}
+
+
+
+/* 角色介紹 */
+
+.character-introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 將角色介紹區域置中 */
+    column-gap: 20px;
+    row-gap: 20px; /* 設置角色介紹之間的間距 */
+}
+
+.character {
+    width: 45%; /* 設置角色介紹區域的寬度為父元素寬度的一半 */
+    text-align: center; /* 文字置中 */
+}
+
+.character img {
+    width: 45%; /* 圖片寬度 */
+    height: auto; /* 高度自適應 */
+    border-radius: 50%; /* 讓圖片也呈現圓形 */
+}
+
+.character h3 {
+    margin-top: 10px; /* 調整角色名稱與圖片的間距 */
+    font-size: 1.5em; /* 放大文字 */
+}
+
+.character p {
+    margin-top: 5px; /* 調整角色介紹與角色名稱的間距 */
+    font-size: 1.2em; /* 放大文字 */
+}
+
+
+
+
+
+
+
+
+/* container2 */
+.container2 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+
+.event {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.event h2 {
+    margin-top: 0;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .contact-info,
+.footer .social-media {
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    margin-top: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
