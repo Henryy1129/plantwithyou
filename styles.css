@@ -20,7 +20,10 @@ body {
     width: 100%; /* 使標頭填滿整個視窗寬度 */
     z-index: 999; /* 確保標頭位於其他內容之上 */
 }
-
+.header a {
+    text-decoration:none;
+    color: white;
+}
 
 .logo {
     display: flex;
@@ -69,7 +72,6 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 10px;
-
     height: 100vh; /* 將容器的高度設置為視窗的高度 */
 }
 

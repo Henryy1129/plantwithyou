@@ -26,7 +26,6 @@ body {
     color: white;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
@@ -65,28 +64,74 @@ body {
 }
 
 
-/* container */
 
-.container {
-    display: grid;
-    background-color: #f9f9f9;
+
+.container1 {
+
     align-items: center; /* 垂直居中 */
     max-width: 800px;
     margin: 20px auto;
     padding: 0 10px;
-    margin-top: 120px;
+
+    margin-top: 150px;
 }
 
-.container h1 {
-    font-size: 4em;
+
+
+
+/* 聯絡區 */
+
+.contact-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
     text-align: center;
-
 }
 
-.container p {
-    font-size: 1.2em;
-    margin: 15px;
+.contact-form h2 {
+    margin-bottom: 20px;
 }
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 250px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #a1b309;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #879b0c;
+}
+
+
+
+
 
 
 /* footer */

@@ -26,7 +26,6 @@ body {
     color: white;
 }
 
-
 .logo {
     display: flex;
     align-items: center;
@@ -66,27 +65,6 @@ body {
 
 
 /* container */
-
-.container {
-    display: grid;
-    background-color: #f9f9f9;
-    align-items: center; /* 垂直居中 */
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 10px;
-    margin-top: 120px;
-}
-
-.container h1 {
-    font-size: 4em;
-    text-align: center;
-
-}
-
-.container p {
-    font-size: 1.2em;
-    margin: 15px;
-}
 
 
 /* footer */
